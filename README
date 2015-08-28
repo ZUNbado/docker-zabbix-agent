@@ -1,0 +1,4 @@
+Module compiled from: https://github.com/monitoringartist/Zabbix-Docker-Monitoring/blob/master/dockerfiles/zabbix2.4_centos7/Dockerfile
+
+
+$ docker run --name zabbix-agent -v /var/run/docker.sock:/var/run/docker.sock -p 10050:10050 -d -e ZABBIX_SERVER=<IP_ZABBIX_SERVER> zunbado/docker-zabbix-agent
